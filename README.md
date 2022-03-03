@@ -2,7 +2,7 @@
 
 本项目用来收集整理LFI漏洞的相关内容，包括LFI的利用方法工具或思路等。本地文件包含漏洞可以是任意文件读取漏洞，任意文件下载漏洞。在PHP中LFI漏洞往往可以直接执行命令，在Java中往往不可以执行命令。作者：[ASTTeam](https://github.com/ASTTeam/LFI)
 
-本项目创建于2020年12月1日，最近的一次更新时间为2022年2月28日。本项目会持续更新，直到海枯石烂！
+本项目创建于2020年12月1日，最近的一次更新时间为2022年3月2日。本项目会持续更新，直到海枯石烂！
 
 - [01-LFI漏洞资源]()
 - [02-LFI漏洞基础]()
@@ -23,6 +23,9 @@
 三、LFI其他资源
 - https://github.com/payloadbox/rfi-lfi-payload-list
 - https://blog.csdn.net/weixin_34268753/article/details/89933140
+- https://www.rcesecurity.com/2017/08/from-lfi-to-rce-via-php-sessions/
+- https://outpost24.com/blog/from-local-file-inclusion-to-remote-code-execution-part-1
+- https://sec-art.net/2021/10/27/exploiting-local-file-inclusion-lfi-vulnerability-with-proc-self-environ-method-lfi-attacks/
 
 ## 02-LFI漏洞基础
 
@@ -36,12 +39,18 @@
 - Java文件包含漏洞
 - 任意文件读取漏洞
 - 任意文件下载漏洞
+- 本地文件包含
+- 远程文件包含
 
 四、LFI漏洞危害
 
 五、LFI漏洞思考
 
-- 文件包含漏洞，可以getshell吗？
+- 文件包含漏洞，可以getshell吗？任意文件包含漏洞可以包含什么？
+- PHP任意文件读取漏洞一定可以getshell吗？
+- PHP文件包含漏洞如何getshell？
+- Java的任意文件读取漏洞可以getshell吗？
+- java文件包含-包含一个jsp文件可以执行命令吗？
 
 ## 03-LFI漏洞工具
 
@@ -51,6 +60,23 @@
 
 三、待整理
 - https://github.com/LandGrey/ClassHound
+- https://github.com/mzfr/liffy
+- https://github.com/chrispetrou/FDsploit
+- https://github.com/kostas-pa/LFITester
+- https://github.com/BoxingOctopus/toxin
+- https://github.com/emadshanab/LFI-Payload-List
+- https://github.com/VainlyStrain/Vailyn
+- https://github.com/aryanrtm/Crascan
+- https://github.com/S1lkys/Auto_LFI
+- https://github.com/sinsinology/phpinfo-Local-File-Inclusion
+- https://github.com/hansmach1ne/lfimap
+- https://github.com/abaykan/Labs
+- https://github.com/machine1337/lfiscan
+- https://github.com/redknight99/Lotsa_Fun_Included
+- https://github.com/DSimsek000/finc
+- https://github.com/jstigerwalt/WEB-Fuzz
+- https://github.com/th3f0r3ign3r/Slifer
+- https://github.com/stefan2200/Bud
 
 ## 04-LFI渗透测试
 

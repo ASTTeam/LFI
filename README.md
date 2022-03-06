@@ -26,6 +26,7 @@
 - https://www.rcesecurity.com/2017/08/from-lfi-to-rce-via-php-sessions/
 - https://outpost24.com/blog/from-local-file-inclusion-to-remote-code-execution-part-1
 - https://sec-art.net/2021/10/27/exploiting-local-file-inclusion-lfi-vulnerability-with-proc-self-environ-method-lfi-attacks/
+- https://xz.aliyun.com/t/6594
 
 ## 02-LFI漏洞基础
 
@@ -84,9 +85,13 @@
 
 一、LFI漏洞挖掘
 
-二、LFI漏洞实战
+二、LFI危险参数
 
-三、LFI高级利用
+- &RealPath=、&readpath=、&FilePath=、&filepath=、&Path=、&path=、&Inputfile=、&inputfile=、&url=、&urls=、&Lang=、&dis=、&Data=、&data=、&readfile=、&ﬁlep=、&Src=、&src=、&menu=、META-INF= 、WEB-INF
+
+三、LFI漏洞实战
+
+四、LFI高级利用
 
 ## 05-LFI代码审计
 
@@ -97,8 +102,8 @@
 三、LFI危险函数
 
 - 在PHP中：
-  - 文件包括：include、include_once、require、require_once
-  - 文件读取：
+  - 文件包括：include()、include_once()、require()、require_once()
+  - 文件读取：readfile()、file_get_contents()、fopen()
 - 在Java中：
 - 在.NET中：
 

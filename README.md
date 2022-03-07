@@ -1,8 +1,8 @@
 # 《深入理解LFI漏洞》
 
-本项目用来收集整理LFI漏洞的相关内容，包括LFI的利用方法工具或思路等。文件包含漏洞往往出现在PHP中，一般可以执行系统命令，包括LFI和RFI。文件读取漏洞和文件下载漏洞或者是路径穿越漏洞和文件漏洞很相似，往往不可以执行命令，只能读取有权限的文件。因为原理一样，所以都记录到了本仓库！作者：[ASTTeam](https://github.com/ASTTeam/LFI)
+本项目用来收集整理LFI漏洞的相关内容，包括LFI的利用方法工具或思路等。文件包含漏洞往往出现在PHP中，一般可以执行系统命令，包括LFI和RFI。文件读取漏洞和文件下载漏洞或者是路径穿越漏洞和文件包含漏洞很相似，往往不可以执行命令，只能读取有权限的文件。因为原理一样，所以都记录到了本仓库！作者：[ASTTeam](https://github.com/ASTTeam/LFI)
 
-本项目创建于2020年12月1日，最近的一次更新时间为2022年3月4日。本项目会持续更新，直到海枯石烂！
+本项目创建于2020年12月1日，最近的一次更新时间为2022年3月7日。本项目会持续更新，直到海枯石烂！
 
 - [01-LFI漏洞资源]()
 - [02-LFI漏洞基础]()
@@ -21,7 +21,6 @@
 二、LFI培训演讲
 
 三、LFI其他资源
-- https://github.com/payloadbox/rfi-lfi-payload-list
 - https://blog.csdn.net/weixin_34268753/article/details/89933140
 - https://www.rcesecurity.com/2017/08/from-lfi-to-rce-via-php-sessions/
 - https://outpost24.com/blog/from-local-file-inclusion-to-remote-code-execution-part-1
@@ -57,7 +56,9 @@
 
 - 如何开发一个文件包含漏洞的工具？
 
-一、LFI主动扫描
+一、LFI Payload
+
+- https://github.com/payloadbox/rfi-lfi-payload-list
 
 二、LFI被动扫描
 
